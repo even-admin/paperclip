@@ -302,7 +302,7 @@ export function Dashboard() {
             slotTypes={["dashboardWidget"]}
             context={{ companyId: selectedCompanyId }}
             className="grid gap-4 md:grid-cols-2"
-            itemClassName="rounded-lg border bg-card p-4 shadow-sm"
+            itemClassName="rounded-2xl border border-border/40 bg-white dark:bg-card p-4 shadow-none"
           />
 
           <div className="grid md:grid-cols-2 gap-4">

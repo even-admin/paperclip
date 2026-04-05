@@ -136,9 +136,9 @@ function KanbanCard({
       style={style}
       {...attributes}
       {...listeners}
-      className={`rounded-md border bg-card p-2.5 cursor-grab active:cursor-grabbing transition-shadow ${
+      className={`rounded-2xl border border-border/40 bg-white dark:bg-card p-2.5 cursor-grab active:cursor-grabbing transition-shadow ${
         isDragging && !isOverlay ? "opacity-30" : ""
-      } ${isOverlay ? "shadow-lg ring-1 ring-primary/20" : "hover:shadow-sm"}`}
+      } ${isOverlay ? "shadow-none ring-1 ring-primary/20" : "shadow-none"}`}
     >
       <Link
         to={`/issues/${issue.identifier ?? issue.id}`}

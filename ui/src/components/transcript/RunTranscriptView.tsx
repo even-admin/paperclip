@@ -845,7 +845,7 @@ function TranscriptCommandGroup({
             <span
               key={index}
               className={cn(
-                "inline-flex h-6 w-6 items-center justify-center rounded-full border shadow-sm",
+                "inline-flex h-6 w-6 items-center justify-center rounded-full border shadow-none",
                 index > 0 && "-ml-1.5",
                 isRunning
                   ? "border-cyan-500/25 bg-cyan-500/[0.08] text-cyan-600 dark:text-cyan-300"
@@ -968,7 +968,7 @@ function TranscriptToolGroup({
               <span
                 key={`${item.ts}-${index}`}
                 className={cn(
-                  "inline-flex h-6 w-6 items-center justify-center rounded-full border shadow-sm",
+                  "inline-flex h-6 w-6 items-center justify-center rounded-full border shadow-none",
                   index > 0 && "-ml-1.5",
                   isItemRunning
                     ? "border-cyan-500/25 bg-cyan-500/[0.08] text-cyan-600 dark:text-cyan-300"
