@@ -23,7 +23,14 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 function resolveThemeFromDocument(): Theme {
   if (typeof document === "undefined") return "dark";
-  return document.documentElement.classList.contains("dark") ? "dark" : "light";
+  // Default to dark mode — only use light if explicitly stored
+  try {
+    const stored = localStorage.getItem(THEME_STORAGE_KEY);
+    if (stored === "light") return "light";
+  } catch {
+    // Ignore read failures
+  }
+  return "dark";
 }
 
 function applyTheme(theme: Theme) {
