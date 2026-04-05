@@ -1315,7 +1315,7 @@ export function IssueDetail() {
           value={issue.title}
           onSave={(title) => updateIssue.mutateAsync({ title })}
           as="h2"
-          className="text-xl font-bold"
+          className="text-2xl font-normal tracking-[-0.02em]"
         />
 
         <InlineEditor

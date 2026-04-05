@@ -5,7 +5,7 @@ import { Link, Outlet, useLocation, useNavigate, useParams } from "@/lib/router"
 import { CompanyRail } from "./CompanyRail";
 import { Sidebar } from "./Sidebar";
 import { InstanceSidebar } from "./InstanceSidebar";
-import { BreadcrumbBar } from "./BreadcrumbBar";
+import { TopBar } from "./TopBar";
 import { PropertiesPanel } from "./PropertiesPanel";
 import { CommandPalette } from "./CommandPalette";
 import { NewIssueDialog } from "./NewIssueDialog";
@@ -413,7 +413,7 @@ export function Layout() {
               isMobile && "sticky top-0 z-20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85",
             )}
           >
-            <BreadcrumbBar />
+            <TopBar />
           </div>
           <div className={cn(isMobile ? "block" : "flex flex-1 min-h-0")}>
             <main
