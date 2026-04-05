@@ -153,7 +153,7 @@ export function Agents() {
               {showTerminated && <span className="ml-0.5 px-1 bg-foreground/10 rounded text-[10px]">1</span>}
             </button>
             {filtersOpen && (
-              <div className="absolute right-0 top-full mt-1 z-50 w-48 border border-border bg-popover shadow-md p-1">
+              <div className="absolute right-0 top-full mt-1 z-50 w-48 border border-border/40 bg-popover rounded-2xl shadow-none p-1">
                 <button
                   className="flex items-center gap-2 w-full px-2 py-1.5 text-xs text-left hover:bg-accent/50 transition-colors"
                   onClick={() => setShowTerminated(!showTerminated)}

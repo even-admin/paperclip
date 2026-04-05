@@ -1607,7 +1607,7 @@ export function Inbox() {
                 Show / hide columns
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-[300px] rounded-xl border-border/70 p-1.5 shadow-xl shadow-black/10">
+            <DropdownMenuContent align="end" className="w-[300px] rounded-2xl border-border/40 p-1.5 shadow-none">
               <DropdownMenuLabel className="px-2 pb-1 pt-1.5">
                 <div className="space-y-1">
                   <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">

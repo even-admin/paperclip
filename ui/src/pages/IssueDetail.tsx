@@ -1315,14 +1315,14 @@ export function IssueDetail() {
           value={issue.title}
           onSave={(title) => updateIssue.mutateAsync({ title })}
           as="h2"
-          className="text-2xl font-normal tracking-[-0.02em]"
+          className="text-2xl font-semibold tracking-tight"
         />
 
         <InlineEditor
           value={issue.description ?? ""}
           onSave={(description) => updateIssue.mutateAsync({ description })}
           as="p"
-          className="text-[15px] leading-7 text-foreground"
+          className="text-base leading-relaxed text-foreground"
           placeholder="Add a description..."
           multiline
           mentions={mentionOptions}

@@ -91,10 +91,10 @@ function AgentRunCard({
 }) {
   return (
     <div className={cn(
-      "flex h-[320px] flex-col overflow-hidden rounded-xl border shadow-sm",
+      "flex h-[320px] flex-col overflow-hidden rounded-2xl border border-border/40 shadow-none",
       isActive
-        ? "border-cyan-500/25 bg-cyan-500/[0.04] shadow-[0_16px_40px_rgba(6,182,212,0.08)]"
-        : "border-border bg-background/70",
+        ? "border-cyan-500/25 bg-cyan-500/[0.04]"
+        : "bg-background/70",
     )}>
       <div className="border-b border-border/60 px-3 py-3">
         <div className="flex items-start justify-between gap-2">

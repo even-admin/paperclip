@@ -128,7 +128,7 @@ function SortableCompanyItem({
                   isSelected
                     ? "rounded-[14px]"
                     : "rounded-[22px] group-hover:rounded-[14px]",
-                  isDragging && "shadow-lg",
+                  isDragging && "shadow-none",
                 )}
               />
               {hasLiveAgents && (

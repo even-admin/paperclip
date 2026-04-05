@@ -771,7 +771,7 @@ export const MarkdownEditor = forwardRef<MarkdownEditorRef, MarkdownEditorProps>
       {mentionActive && filteredMentions.length > 0 &&
         createPortal(
           <div
-            className="fixed z-[9999] min-w-[180px] max-w-[calc(100vw-16px)] max-h-[200px] overflow-y-auto rounded-md border border-border bg-popover shadow-md"
+            className="fixed z-[9999] min-w-[180px] max-w-[calc(100vw-16px)] max-h-[200px] overflow-y-auto rounded-2xl border border-border/40 bg-popover shadow-none"
             style={mentionMenuPosition ?? undefined}
           >
             {filteredMentions.map((option, i) => (
